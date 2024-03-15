@@ -1,3 +1,11 @@
+let audio1 = new Audio("sounds/sound1.mp3");
+let audio2 = new Audio("sounds/sound2.mp3");
+let audio3 = new Audio("sounds/sound3.mp3");
+let audio4 = new Audio("sounds/sound4.mp3");
+let audio5 = new Audio("sounds/sound5.mp3");
+let audio6 = new Audio("sounds/sound6.mp3");
+let audio7 = new Audio("sounds/sound7.mp3");
+
 const index = document.querySelectorAll(".drum").length;
 
 for(let i = 0; i<index; i++){
@@ -5,5 +13,26 @@ for(let i = 0; i<index; i++){
 }
 
 function handleClick(){
-    console.log("i got clicked");
+    if(this.innerHTML == "w"){
+        audio1.play();
+    }
+    if(this.innerHTML == "a"){
+        audio2.play();
+    }
+    if(this.innerHTML == "s"){
+        audio3.play();
+    }
+    if(this.innerHTML == "d"){
+        audio4.play();
+    }
+    if(this.innerHTML == "j"){
+        audio5.play();
+    }
+    if(this.innerHTML == "k"){
+        audio6.play();
+    }
+    if(this.innerHTML == "l"){
+        audio7.play();
+    }
+    console.log(this.innerHTML);
 }
