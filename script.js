@@ -36,3 +36,31 @@ function handleClick(){
     }
     console.log(this.innerHTML);
 }
+
+document.addEventListener("keydown",handleKey);
+
+function handleKey(event){
+    let key = event.key;
+    if(key == "w"){
+        audio1.play();
+    }
+    if(key == "a"){
+        audio2.play();
+    }
+    if(key == "s"){
+        audio3.play();
+    }
+    if(key == "d"){
+        audio4.play();
+    }
+    if(key == "j"){
+        audio5.play();
+    }
+    if(key == "k"){
+        audio6.play();
+    }
+    if(key == "l"){
+        audio7.play();
+    }
+    console.log(event);
+}
